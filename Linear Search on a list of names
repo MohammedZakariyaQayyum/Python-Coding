@@ -1,0 +1,14 @@
+names = ['John','Zak','Arthur','Dutch','Micah','Kratos','Tommy','Vito','Paulie']
+target = input("Enter a name to search for: ")
+found = False
+count = 0
+end = False
+while not found and not end:
+  if names[count] == target:
+    found = True
+    print("Target name,",target,"has been found")
+  elif count == (len(names)-1):
+    print("Name cannot be found")
+    end = True
+  else:
+    count = count + 1
