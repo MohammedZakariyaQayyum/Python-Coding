@@ -1,0 +1,20 @@
+# Code for binary search
+
+list = [1,4,6,7,9,14,23,26]
+found = False
+LB = 0
+UB = (len(list)) - 1
+
+target = int(input("Enter number you want to find in the list: "))
+
+while not found :
+  MP = ((UB + LB) // 2)
+  if list[MP] == target:
+    print("Target has been found in position",(MP+1))
+    found = True
+  elif list[MP] < target:
+    LB = MP + 1
+  elif list[MP] > target:
+    UB = MP - 1
+  else:
+    print("Target cannot be found")
