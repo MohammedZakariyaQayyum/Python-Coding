@@ -1,0 +1,8 @@
+array = []
+print("Make an array of the days of the weeks")
+
+for i in range(1,8):
+  inp = input("Enter day of the week: ")
+  array.append(inp)
+  i+=1
+print(array)
