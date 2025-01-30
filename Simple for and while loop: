@@ -1,0 +1,19 @@
+#For loop
+
+num = int(input("Enter number: "))
+
+
+for i in range(1,13):
+  print(num*i)
+  i+=1
+  
+
+#While loop
+
+num = int(input("Enter number: "))
+i = 1
+
+while i < 13:
+  print(num*i)
+  i+=1
+
